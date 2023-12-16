@@ -1322,6 +1322,7 @@ code {
   http://jaredhardy.com/minimal-devices/
   
 ----------------------------------*/
+
 .md-iphone-5 .md-body {
   width: 100%;
   height: 100%;
@@ -1338,9 +1339,15 @@ code {
   border-radius: 0.25em;
   overflow: hidden;
   box-shadow: 0 0 0px 3px #161616;
+  display: flex; /* Added flex display */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
 }
 .md-iphone-5 .md-screen img {
   width: 100%;
+  max-height: 100%; /* Set maximum height to 100% of the parent */
+  max-width: 100%; /* Set maximum width to 100% of the parent */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .md-iphone-5 .md-home-button {
@@ -1410,7 +1417,7 @@ code {
 
 .md-iphone-5 {
   width: 22.8125em;
-  height: 49em;
+  height: 39em;
   position: relative;
 }
 .md-iphone-5 .md-front-camera {
@@ -1437,7 +1444,6 @@ code {
 }
 .md-iphone-5 .md-screen {
   width: 20em;
-  height: 35.5em;
   top: 3.75em;
 }
 .md-iphone-5 .md-home-button {

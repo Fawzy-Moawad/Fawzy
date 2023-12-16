@@ -235,7 +235,6 @@
 })()
 
 
-
 // Initialize the carousel when the document is ready
 $(document).ready(function () {
   $('#iphoneCarousel').carousel();
